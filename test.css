@@ -1,0 +1,80 @@
+html, body {
+	margin:0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: Vandana, sans-serif;
+	font-weight: lighter;
+}
+
+a, a:visited, a:active {
+	text-decoration: none;
+	color: black;
+}
+
+.dark-shadow {
+	box-shadow: 9px 10px 37px -4px rgba(0,0,0,0.58);
+} 
+.light-shadow {
+	box-shadow: 9px 10px 37px -4px rgba(0,0,0,0.47);
+}
+
+
+
+body {
+		margin: 0;
+	}
+.shadowTransition {
+	transition: 0.4s;
+	box-shadow: 7px 7px 17px 0px rgba(0,0,0,0.2);
+}
+.shadowTransition:hover {
+	box-shadow: 7px 7px 17px 0px rgba(0,0,0,0.5);
+}
+.block {
+	height: 100px; 
+	background: white; 
+	border-radius: 10px;
+}
+.column {
+	max-width: 1000px;
+	width: 80%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	clear: both;
+	height: auto;
+	display: table;
+}
+.column:after {
+	clear: both;
+}
+.half {
+	width: 49.2%;
+	margin-left: 1.6%;
+	display: block;
+	float: left;
+}
+.half:first-child {
+	margin-left: 0;
+}
+.selection {
+	height: 60px;
+	border-radius: 10px;
+}
+@media (max-width: 1000px) {
+	.block {
+		width: 100%;
+	}
+	.half {
+		width: 100%;
+		margin: 1% 0 1% 0;
+	}
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
